@@ -12,13 +12,12 @@
         float currencyCount;
 
         Console.WriteLine("Добро пожаловать в конвертер валют.");
-        Console.WriteLine("Введите ваш баланс в рублях: ");
+        Console.Write("Введите ваш баланс в рублях: ");
         float rub = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Введите ваш баланс в долларах: ");
+        Console.Write("Введите ваш баланс в долларах: ");
         float usd = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("Введите ваш баланс в евро: ");
+        Console.Write("Введите ваш баланс в евро: ");
         float euro = Convert.ToInt32(Console.ReadLine());
-
         Console.WriteLine("Нажмите - 1 для конвертации рублей в доллары");
         Console.WriteLine("Нажмите - 2 для конвертации долларов в рубли");
         Console.WriteLine("Нажмите - 3 для конвертации рублей в евро");
@@ -56,7 +55,6 @@
                     Console.WriteLine("Конвертация долларов в рубли.");
                     Console.Write("Сколько долларов вы хотите конвертировать?: ");
                     currencyCount = Convert.ToInt32(Console.ReadLine());
-
                     if (usd > currencyCount)
                     {
                         usd -= currencyCount;
@@ -77,7 +75,6 @@
                     Console.WriteLine("Конвертация рублей в евро.");
                     Console.Write("Сколько рублей вы хотите конвертировать?: ");
                     currencyCount = Convert.ToInt32(Console.ReadLine());
-
                     if (rub > currencyCount)
                     {
                         rub -= currencyCount;
@@ -98,7 +95,6 @@
                     Console.WriteLine("Конвертация евро в рубли.");
                     Console.Write("Сколько евро вы хотите конвертировать?: ");
                     currencyCount = Convert.ToInt32(Console.ReadLine());
-
                     if (euro > currencyCount)
                     {
                         euro -= currencyCount;
@@ -119,7 +115,6 @@
                     Console.WriteLine("Конвертация долларов в евро.");
                     Console.Write("Сколько долларов вы хотите конвертировать?: ");
                     currencyCount = Convert.ToInt32(Console.ReadLine());
-
                     if (usd > currencyCount)
                     {
                         usd -= currencyCount;
@@ -140,7 +135,6 @@
                     Console.WriteLine("Конвертация евро в доллары.");
                     Console.Write("Сколько евро вы хотите конвертировать?: ");
                     currencyCount = Convert.ToInt32(Console.ReadLine());
-
                     if (euro > currencyCount)
                     {
                         euro -= currencyCount;
@@ -159,6 +153,7 @@
                     break;
             }
         }
+
         Console.WriteLine($"Конвертация закончена. Ваш баланс {rub} рублей, {usd} долларов, {euro} евро.");
     }
 }
